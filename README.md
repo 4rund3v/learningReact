@@ -1,5 +1,6 @@
-# 30dayReactApp-Development
-Creating applications while learning react.
+# Learning React 
 
-###Day 1
-- Food recipe app
+
+## Projects
+ - 
+ - 
