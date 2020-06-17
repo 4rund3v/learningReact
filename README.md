@@ -1,8 +1,8 @@
 # Learning React
 
 - [x] Finish JS fundamentals
-- Get started with react
-- Build basic apps
+- [ ] Get started with react
+- [ ] Build basic apps
 
 ## Fundamentals of Javascript
 
