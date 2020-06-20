@@ -15,6 +15,11 @@ class App extends Component {
     ],
   };
 
+  constructor() {
+    super();
+    console.log("App - Constructor called.");
+  }
+
   handleDelete = (counterId) => {
     console.log("Delete Event called", counterId);
     let updatedCounters = this.state.counters.filter(
@@ -38,6 +43,21 @@ class App extends Component {
     return;
   };
 
+  handleDecrement = (counterId) => {
+    let newCounter = this.state.counters.find(
+      (counter) => counter.id === counterId
+    );
+    console.log("Counter to decrement for is : ", newCounter);
+    const counters = [...this.state.counters];
+    const index = counters.indexOf(newCounter);
+    newCounter.value = newCounter.value - 1;
+
+    console.log("Incrementing counter at index", index);
+    counters[index] = newCounter;
+    this.setState({ counters: counters });
+    return;
+  };
+
   handleReset = () => {
     let newCounters = this.state.counters.map((c) => {
       c.value = 0;
@@ -53,17 +73,19 @@ class App extends Component {
           totalCounters={
             this.state.counters.filter((counter) => counter.value > 0).length
           }
-        ></NavBar>
+        />
         <main className="container">
           <Counters
             counters={this.state.counters}
             onReset={this.handleReset}
             onIncrement={this.handleIncrement}
             onDelete={this.handleDelete}
+            onDecrement={this.handleDecrement}
           ></Counters>
         </main>
       </React.Fragment>
     );
   }
 }
+
 export default App;
