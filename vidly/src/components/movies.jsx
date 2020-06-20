@@ -1,10 +1,25 @@
 import React, { Component } from "react";
-import { getMovies, deleteMovieById } from "../services/movies";
+import { getMovies, deleteMovieById, likeMovieById } from "../services/movies";
+import { getGenres } from "../services/genres";
+import Pagination from "./common/pagination";
+import ListGroup from "./common/listgroup";
+
+import { paginate } from "../utils/paginate";
+import MovieTable from "./movieTable";
 
 class Movies extends Component {
   state = {
-    movies: getMovies(),
+    movies: [],
+    genres: [],
+    entriesPerPage: 8,
+    currentPage: 1,
+    selectedGenre: null,
+    sortBy: { field: "title", order: "asc" },
   };
+
+  componentDidMount() {
+    this.setState({ movies: getMovies(), genres: getGenres() });
+  }
 
   handleDeleteMovie = (movieId) => {
     console.log("Movie to delete is :  ", movieId);
@@ -12,60 +27,74 @@ class Movies extends Component {
     this.setState({ movies: getMovies() });
   };
 
-  getTableBody() {
-    return (
-      <tbody>
-        {this.state.movies.map((movie) => {
-          let row = (
-            <tr key={movie._id}>
-              <td>
-                <img src="https://picsum.photos/50" alt={movie.title} />
-              </td>
-              <td>{movie.title}</td>
-              <td>{movie.genre}</td>
-              <td>{movie.numberInStock}</td>
-              <td>{movie.dailyRentalRate}</td>
-              <td>{movie.publishDate}</td>
-              <td>
-                <button
-                  className="btn btn-danger btn-sm"
-                  onClick={() => this.handleDeleteMovie(movie._id)}
-                >
-                  Delete
-                </button>
-              </td>
-            </tr>
-          );
-          return row;
-        })}
-      </tbody>
-    );
-  }
-  getTableHeaders() {
-    return (
-      <thead>
-        <tr>
-          <th>MovieThumb</th>
-          <th>Title</th>
-          <th>Genre</th>
-          <th>ItemsInStock</th>
-          <th>RentStock</th>
-          <th>PublishDate</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-    );
-  }
+  handleGenreSelected = (genereId) => {
+    console.log("Genre selected is : ", genereId);
+    this.setState({ selectedGenre: genereId, currentPage: 1 });
+  };
 
+  handlePageChange = (pageNum) => {
+    console.log("PageNum requested is : ", pageNum);
+    this.setState({ currentPage: pageNum });
+  };
+
+  handleLike = (movieId) => {
+    console.log("Movie to like is :  ", movieId);
+    likeMovieById(movieId);
+    this.setState({ movies: getMovies() });
+  };
+  handleSort = (colName, order) => {
+    console.log("Sort by :", colName);
+    let sortBy = { field: colName, order: order };
+    this.setState({ sortBy: sortBy });
+  };
   main() {
-    const movieTable = (
-      <React.Fragment>
-        <p> Showing {this.state.movies.length} movies.</p>
-        <table className="table">
-          {this.getTableHeaders()}
-          {this.getTableBody()}
-        </table>
-      </React.Fragment>
+    const filteredMovies = this.state.selectedGenre
+      ? this.state.movies.filter((m) => m.genre === this.state.selectedGenre)
+      : this.state.movies;
+
+    const movies = paginate(
+      filteredMovies,
+      this.state.currentPage,
+      this.state.entriesPerPage
+    );
+
+    console.log("Movie list being recieved is ", movies);
+    const moviePage = (
+      <div className="row">
+        <div className="col-3">
+          <ListGroup
+            genres={this.state.genres}
+            selectedGenre={this.state.selectedGenre}
+            onGenreSelect={this.handleGenreSelected}
+          />
+        </div>
+        <div className="col">
+          <MovieTable
+            movies={movies}
+            onMovieLike={this.handleLike}
+            onDeleteMovie={this.handleDeleteMovie}
+            onMovieSort={this.handleSort}
+          />
+          <Pagination
+            itemsCount={filteredMovies.length}
+            currentPage={this.state.currentPage}
+            entriesPerPage={this.state.entriesPerPage}
+            onPageChange={this.handlePageChange}
+          />
+          <p>
+            {" "}
+            Showing{" "}
+            {Math.max(
+              (this.state.currentPage - 1) * this.state.entriesPerPage,
+              1
+            )}
+            {"-"}
+            {filteredMovies.length +
+              (this.state.currentPage - 1) * this.state.entriesPerPage}{" "}
+            of {filteredMovies.length} movies.
+          </p>
+        </div>
+      </div>
     );
 
     if (this.state.movies.length === 0) {
@@ -73,7 +102,7 @@ class Movies extends Component {
       const mainDiv = <React.Fragment>{emptyMovies}</React.Fragment>;
       return mainDiv;
     } else {
-      const mainDiv = <div>{movieTable}</div>;
+      const mainDiv = <div>{moviePage} </div>;
       return mainDiv;
     }
   }

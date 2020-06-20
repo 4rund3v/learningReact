@@ -1,4 +1,3 @@
-import * as genreService from "./genres";
 import { movie_list } from "./movie_list";
 
 export function getMovies() {
@@ -13,4 +12,9 @@ export function deleteMovieById(movieId) {
   let movieToDelete = movie_list.find((movie) => movie._id === movieId);
   movie_list.splice(movie_list.indexOf(movieToDelete), 1);
   return movieToDelete;
+}
+
+export function likeMovieById(movieId) {
+  let movieToLike = movie_list.find((movie) => movie._id === movieId);
+  movieToLike.liked = !movieToLike.liked;
 }
