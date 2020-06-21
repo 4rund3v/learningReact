@@ -19,21 +19,23 @@ class App extends Component {
             ></Route>
 
             <Route
-              path="/models"
-              render={() => <Content selectedItem="models" />}
-            ></Route>
-            <Route
               path="/models/:id"
               render={() => <Content selectedItem="modelDetail" />}
             ></Route>
 
             <Route
-              path="/personalities"
-              render={() => <Content selectedItem="personalities" />}
+              path="/models"
+              render={() => <Content selectedItem="models" />}
             ></Route>
+
             <Route
               path="/personalities/:id"
               render={() => <Content selectedItem="personalityDetail" />}
+            ></Route>
+
+            <Route
+              path="/personalities"
+              render={() => <Content selectedItem="personalities" />}
             ></Route>
 
             <Route

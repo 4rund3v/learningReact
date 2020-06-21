@@ -1,13 +1,15 @@
 import React, { Component } from "react";
-import Personalities from "./personalities";
-
 import SideBar from "./sidebar";
 import FocusBar from "./foucsbar";
+
 import Models from "./models";
-import Tasks from "./tasks";
-import Settings from "./settings";
+import Personalities from "./personalities";
+import PersonalityDetail from "./personalityDetail";
+import ModelDetail from "./modelDetails";
 import Recognitions from "./recognitions";
+import Settings from "./settings";
 import Stats from "./stats";
+import Tasks from "./tasks";
 
 class Content extends Component {
   state = {
@@ -35,11 +37,15 @@ class Content extends Component {
     // function to handle displaying the relavent element's data that are fetched from the server
     // usually if this element is of type list then just list the items in a table container
     const { selectedItem } = this.props;
-    let mainContent = <h1></h1>;
+    let mainContent = <h1> </h1>;
     if (selectedItem === "personalities") {
       mainContent = <Personalities />;
+    } else if (selectedItem === "personalityDetail") {
+      mainContent = <PersonalityDetail />;
     } else if (selectedItem === "models") {
       mainContent = <Models />;
+    } else if (selectedItem === "modelDetail") {
+      mainContent = <ModelDetail />;
     } else if (selectedItem === "tasks") {
       mainContent = <Tasks />;
     } else if (selectedItem === "stats") {

@@ -8,7 +8,11 @@ class SideBar extends Component {
     console.log("[listSideBarElements] Elements recieved are ", elements);
     const rows = elements.map((elem) => {
       let row = (
-        <NavLink className="nav-item nav-link" to={"/" + elem.path}>
+        <NavLink
+          key={elem._id}
+          className="nav-item nav-link"
+          to={"/" + elem.path}
+        >
           {elem.name}
         </NavLink>
       );
