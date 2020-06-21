@@ -1,18 +1,26 @@
 # Learning React
 
 - [x] Finish JS fundamentals
-- [ ] Get started with react
+- [x] Get started with react
 - [ ] Build basic apps
 
 ## Fundamentals of Javascript
 
-- [x] Variables : Use of var, let, const keywords for variable scope.
-- [x] Functions : normal functions and the arrow functions and its syntax
-- [x] Objects : the basic dictionary, with its this method explained.
-- [x] this: this and its uses, object(this) binding
-- [x] class: Basic class and inheritance examples.
+-  Variables : Use of var, let, const keywords for variable scope.
+-  Functions : normal functions and the arrow functions and its syntax
+-  Objects : the basic dictionary, with its this method explained.
+-  this: this and its uses, object(this) binding
+-  class: Basic class and inheritance examples.
+
+## React Basics
+- Components
+- Routers
+- Links & Nav Links
+
 
 ## Projects
 
-- [ ] Shopping Cart total calculator
-- [ ] Local Movie App
+- [x] Shopping Cart total calculator
+- [x] Local Movie App
+- [ ] Dashboard App
+ 
