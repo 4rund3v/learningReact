@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Table from "./common/table";
 import Pagination from "./common/paginate";
 import { getPersonalities } from "../services/personalities";
-
+import { Link } from "react-router-dom";
 // class Personality extends Component {
 //   state = {};
 // }
@@ -57,6 +57,7 @@ class Personalities extends Component {
 
   handleSelectPersonality = (itemId) => {
     console.log("[handleSelectPersonality] Item selected is :", itemId);
+    return <Link to={`/personalities/${itemId}`}></Link>;
   };
 
   // render
@@ -67,7 +68,7 @@ class Personalities extends Component {
           columns={this.state.columns}
           columnMap={this.state.columnMap}
           data={this.state.personalityData.personalities}
-          onSelectItem={this.handleSelectPersonality}
+          hyperlinkColumn={{ column: "Personality", path: "/personalities" }}
           currentPage={this.state.currentPage}
           onPageChange={this.handlePageChange}
           onSortColumn={this.handleSortColumn}

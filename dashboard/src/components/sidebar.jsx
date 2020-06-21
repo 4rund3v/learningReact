@@ -1,33 +1,16 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 class SideBar extends Component {
-  state = {
-    containers: [],
-  };
-
-  componentDidMount() {
-    if (!this.activeElement) {
-      this.setState({ activeElement: "personalities" });
-    }
-  }
+  state = {};
 
   listSideBarElements() {
-    const { elements, activeElement, onSelectElement } = this.props;
+    const { elements } = this.props;
     console.log("[listSideBarElements] Elements recieved are ", elements);
     const rows = elements.map((elem) => {
       let row = (
-        <li
-          key={elem._id}
-          className="nav-item"
-          onClick={() => onSelectElement(elem._id)}
-        >
-          <NavLink
-            className={elem._id === activeElement ? "nav-link" : "nav-link"}
-            to={"/" + elem.path}
-          >
-            {elem.name}
-          </NavLink>
-        </li>
+        <NavLink className="nav-item nav-link" to={"/" + elem.path}>
+          {elem.name}
+        </NavLink>
       );
       return row;
     });

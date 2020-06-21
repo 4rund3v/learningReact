@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import _ from "lodash";
+import { Link } from "react-router-dom";
 // TableHeader Class
 
 class TableHeader extends Component {
@@ -43,12 +44,23 @@ class TableHeader extends Component {
 }
 
 class TableBody extends Component {
-  renderCell = (item, column) => {
-    // console.log("Item recieved is : ", item);
-    // console.log("Column recieved is : ", column);
-    if (column.content) return column.content(item);
+  renderCell = (item, column, columnMap, hyperlinkColumn) => {
+    console.log("column recieved is : ", column);
+    console.log("columnMap recieved is : ", columnMap);
+    console.log("hyperlinkColumn recieved is : ", hyperlinkColumn);
+    console.log("item recieved is : ", item);
+    if (
+      (hyperlinkColumn !== undefined) &
+      (column === hyperlinkColumn["column"])
+    ) {
+      return (
+        <Link to={`${hyperlinkColumn.path}/${item._id}`}>
+          {_.get(item, columnMap[column])}
+        </Link>
+      );
+    }
 
-    return _.get(item, column);
+    return _.get(item, columnMap[column]);
   };
 
   createKey = (item, column) => {
@@ -56,18 +68,15 @@ class TableBody extends Component {
   };
 
   render() {
-    const { data, columns, columnMap, onSelectItem } = this.props;
-    console.log("Recieved data : ,", data);
+    const { data, columns, columnMap, hyperlinkColumn } = this.props;
+    console.log("Recieved data : ,", hyperlinkColumn);
     return (
       <tbody>
         {data.map((item) => (
           <tr key={item._id}>
             {columns.map((column) => (
-              <td
-                key={this.createKey(item, column)}
-                onClick={() => onSelectItem(item._id)}
-              >
-                {this.renderCell(item, columnMap[column])}
+              <td key={this.createKey(item, column)}>
+                {this.renderCell(item, column, columnMap, hyperlinkColumn)}
               </td>
             ))}
           </tr>
@@ -80,7 +89,7 @@ class TableBody extends Component {
 class Table extends Component {
   render() {
     const { columns, columnMap, data } = this.props;
-    const { onSelectItem } = this.props;
+    const { hyperlinkColumn } = this.props;
     console.log("[Table] Recieved data : ", columns, columnMap);
     return (
       <div className="table-responsive">
@@ -90,7 +99,7 @@ class Table extends Component {
             data={data}
             columns={columns}
             columnMap={columnMap}
-            onSelectItem={onSelectItem}
+            hyperlinkColumn={hyperlinkColumn}
           />
         </table>
       </div>
