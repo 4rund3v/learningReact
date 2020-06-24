@@ -3,6 +3,7 @@
 - [x] Finish JS fundamentals
 - [x] Get started with react
 - [x] React Antd for UI framework
+- [ ] React Dashboard
 - [ ] Build basic apps
 
 ## Fundamentals of Javascript
