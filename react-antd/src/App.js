@@ -2,12 +2,13 @@ import React from "react";
 import { Layout, Menu } from "antd";
 import { Avatar } from "antd";
 import {
-  DashboardOutlined,
-  BarChartOutlined,
-  SettingOutlined,
-  ProfileOutlined,
-  UnorderedListOutlined,
-  ImportOutlined,
+  DashboardTwoTone,
+  PieChartTwoTone,
+  SettingTwoTone,
+  ProfileTwoTone,
+  CodeTwoTone,
+  InteractionTwoTone,
+  IdcardTwoTone,
 } from "@ant-design/icons";
 import "./App.css";
 import "antd/dist/antd.css";
@@ -33,40 +34,50 @@ function App() {
           </Title>
         </Header>
         <Layout>
-          <Sider>
-            <Menu mode="inline">
-              <Menu.Item key="dashboard" icon={<DashboardOutlined />}>
+          <Sider
+            style={{
+              overflow: "auto",
+              height: "100vh",
+              position: "fixed",
+              left: 0,
+            }}
+          >
+            <Menu mode="inline" theme={"dark"}>
+              <Menu.Item key="dashboard" icon={<DashboardTwoTone />}>
                 Dashboard
               </Menu.Item>
-              <Menu.Item key="stats" icon={<BarChartOutlined />}>
-                Stats
+              <Menu.Item key="stats" icon={<PieChartTwoTone />}>
+                {"Stats"}
               </Menu.Item>
-              <SubMenu key="tasks" title="Tasks" icon={<ProfileOutlined />}>
-                <Menu.ItemGroup>
-                  <Menu.Item
-                    key="recognitionTasks"
-                    icon={<UnorderedListOutlined />}
-                  >
-                    Recognition Tasks{" "}
-                  </Menu.Item>
-                </Menu.ItemGroup>
-                <Menu.ItemGroup>
-                  <Menu.Item key="relearnTasks" icon={<ImportOutlined />}>
-                    Relearn Tasks
-                  </Menu.Item>
-                </Menu.ItemGroup>
+              <SubMenu key="tasks" title="Tasks" icon={<ProfileTwoTone />}>
+                <Menu.Item key="recognitionTasks" icon={<CodeTwoTone />}>
+                  {"Recognition Tasks"}
+                </Menu.Item>
+                <Menu.Item key="relearnTasks" icon={<InteractionTwoTone />}>
+                  {"Relearn Tasks"}
+                </Menu.Item>
               </SubMenu>
-              <Menu.Item key="settings" icon={<SettingOutlined />}>
-                Settings
+              <Menu.Item key="clients" icon={<IdcardTwoTone />}>
+                {"Clients"}
+              </Menu.Item>
+              <Menu.Item key="settings" icon={<SettingTwoTone />}>
+                {"Settings"}
               </Menu.Item>
             </Menu>
           </Sider>
           <Layout>
-            <Content>Content</Content>
-            <Footer>Footer</Footer>
+            <Content>{"Content"}</Content>
+            <Footer
+              style={{
+                overflow: "auto",
+                textAlign: "center",
+              }}
+            >
+              {"PotatoCodes ©2020 Created by Arun Dev"}
+            </Footer>
           </Layout>
         </Layout>
-      </Layout>{" "}
+      </Layout>
     </div>
   );
 }
