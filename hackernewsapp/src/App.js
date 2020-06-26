@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { getNews } from "./services/news";
 
@@ -34,34 +33,63 @@ class App extends Component {
     // const { handleDismiss, handleSearch } = this.state;
     return (
       <div className="App">
-        <form>
-          <input
-            type="text"
-            value={searchTerm}
-            onChange={(event) => this.handleSearch(event)}
-            placeholder="Search ..."
-          />
-        </form>
-        {news.filter(isSearched(searchTerm)).map((item) => {
-          return (
-            <div key={item.id}>
-              <span>
-                <a href={item.url}>{item.title}</a>
-              </span>
-              <span>{item.points}</span>
-              <span>{item.comments}</span>
-              <span>
-                <button onClick={() => this.handleDismiss(item.id)}>
-                  Dismiss
-                </button>
-              </span>
-            </div>
-          );
-        })}
-        ;
+        <Search searchTerm={searchTerm} onSearchChange={this.handleSearch} />
+        <Table
+          news={news}
+          searchTerm={searchTerm}
+          onDismiss={this.handleDismiss}
+        />
       </div>
     );
   }
+}
+
+function Search(props) {
+  const { searchTerm, onSearchChange } = props;
+  return (
+    <form>
+      <input
+        type="text"
+        value={searchTerm}
+        onChange={(event) => onSearchChange(event)}
+        placeholder="Search ..."
+      />
+    </form>
+  );
+}
+
+function Table(props) {
+  const { news, searchTerm, onDismiss } = props;
+  return (
+    <div>
+      {news.filter(isSearched(searchTerm)).map((item) => {
+        return (
+          <div key={item.id}>
+            <span>
+              <a href={item.url}>{item.title}</a>
+            </span>
+            <span>{item.points}</span>
+            <span>{item.comments}</span>
+            <Button
+              onClick={() => onDismiss(item.id)}
+              className="dismissButton"
+            >
+              {" Dismiss "}
+            </Button>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+function Button(props) {
+  const { onClick, className = "", children } = props;
+  return (
+    <button className={className} onClick={onClick}>
+      {children}
+    </button>
+  );
 }
 
 export default App;
