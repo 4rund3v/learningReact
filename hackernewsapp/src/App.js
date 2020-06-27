@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import "./App.css";
 import { getNews } from "./services/news";
 
+const DEFAULT_QUERY = "redux";
+const PATH_BASE = "https://hn.algolia.com/api/v1";
+const PATH_SEARCH = "/search";
+const PARAM_SEARCH = "/query=";
+
 function isSearched(searchTerm) {
   return function (item) {
     return item.title
@@ -13,8 +18,9 @@ function isSearched(searchTerm) {
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { news: getNews(), searchTerm: "" };
+    this.state = { news: getNews(), searchTerm: DEFAULT_QUERY, result: null };
   }
+
   handleDismiss = (newsId) => {
     const newsListUpdated = this.state.news.filter(
       (item) => item.id !== newsId
@@ -28,12 +34,28 @@ class App extends Component {
     this.setState({ searchTerm: searchTerm });
   };
 
+  setSearchTopStories = (result) => {
+    this.setState({ result });
+  };
+
+  componentDidMount() {
+    const { searchTerm } = this.state;
+    const searchUrl = `${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}`;
+    fetch(searchUrl)
+      .then((response) => response.json())
+      .then((result) => this.setSearchTopStories(result))
+      .catch((error) => error);
+  }
+
   render() {
     const { searchTerm, news } = this.state;
     // const { handleDismiss, handleSearch } = this.state;
     return (
-      <div className="App">
-        <Search searchTerm={searchTerm} onSearchChange={this.handleSearch} />
+      <div className="page">
+        <div className="interactions">
+          <Search searchTerm={searchTerm} onSearchChange={this.handleSearch} />
+        </div>
+
         <Table
           news={news}
           searchTerm={searchTerm}
@@ -61,21 +83,23 @@ function Search(props) {
 function Table(props) {
   const { news, searchTerm, onDismiss } = props;
   return (
-    <div>
+    <div className="table">
       {news.filter(isSearched(searchTerm)).map((item) => {
         return (
-          <div key={item.id}>
-            <span>
+          <div className="table-row" key={item.id}>
+            <span style={{ width: "40%" }}>
               <a href={item.url}>{item.title}</a>
             </span>
-            <span>{item.points}</span>
-            <span>{item.comments}</span>
-            <Button
-              onClick={() => onDismiss(item.id)}
-              className="dismissButton"
-            >
-              {" Dismiss "}
-            </Button>
+            <span style={{ width: "40%" }}>{item.points}</span>
+            <span style={{ width: "10%" }}>{item.comments}</span>
+            <span style={{ width: "10%" }}>
+              <Button
+                onClick={() => onDismiss(item.id)}
+                className="button-inline"
+              >
+                {" Dismiss "}
+              </Button>
+            </span>
           </div>
         );
       })}
