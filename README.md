@@ -8,21 +8,22 @@
 
 ## Fundamentals of Javascript
 
--  Variables : Use of var, let, const keywords for variable scope.
--  Functions : normal functions and the arrow functions and its syntax
--  Objects : the basic dictionary, with its this method explained.
--  this: this and its uses, object(this) binding
--  class: Basic class and inheritance examples.
+- Variables : Use of var, let, const keywords for variable scope.
+- Functions : normal functions and the arrow functions and its syntax
+- Objects : the basic dictionary, with its this method explained.
+- this: this and its uses, object(this) binding
+- class: Basic class and inheritance examples.
 
 ## React Basics
+
 - Components
 - Routers
 - Links & Nav Links
-
+- Component life cycle methods
 
 ## Projects
 
 - [x] Shopping Cart total calculator
 - [x] Local Movie App
 - [ ] Dashboard App
- 
+- [ ] Music App
