@@ -5,7 +5,7 @@ import { getNews } from "./services/news";
 const DEFAULT_QUERY = "redux";
 const PATH_BASE = "https://hn.algolia.com/api/v1";
 const PATH_SEARCH = "/search";
-const PARAM_SEARCH = "/query=";
+const PARAM_SEARCH = "query=";
 
 function isSearched(searchTerm) {
   return function (item) {
@@ -18,14 +18,32 @@ function isSearched(searchTerm) {
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { news: getNews(), searchTerm: DEFAULT_QUERY, result: null };
+    this.state = { searchTerm: DEFAULT_QUERY, result: null };
+  }
+
+  componentDidMount() {
+    const { searchTerm } = this.state;
+    const searchUrl = `${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}`;
+    console.log("componentDidMount : the search url is ", searchUrl);
+    fetch(searchUrl)
+      .then((response) => {
+        console.log("ComponentDidMount : ", response);
+        return response.json();
+      })
+      .then((result) => {
+        console.log("Result from fetch : ", result);
+        this.setSearchTopStories(result);
+      })
+      .catch((error) => error);
   }
 
   handleDismiss = (newsId) => {
-    const newsListUpdated = this.state.news.filter(
-      (item) => item.id !== newsId
+    console.log("handleDismiss: Dismiss id", newsId);
+    const newsListUpdated = this.state.result.hits.filter(
+      (item) => item.objectID !== newsId
     );
-    this.setState({ news: newsListUpdated });
+    console.log("Number of items in newsListUpdated:", newsListUpdated.length);
+    this.setState({ result: { ...this.state.result, hits: newsListUpdated } });
   };
 
   handleSearch = (event) => {
@@ -38,31 +56,34 @@ class App extends Component {
     this.setState({ result });
   };
 
-  componentDidMount() {
+  onSearchSubmit = () => {
     const { searchTerm } = this.state;
-    const searchUrl = `${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${searchTerm}`;
-    fetch(searchUrl)
-      .then((response) => response.json())
-      .then((result) => this.setSearchTopStories(result))
-      .catch((error) => error);
-  }
+  };
 
   render() {
-    const { searchTerm, news } = this.state;
+    const { searchTerm, result } = this.state;
     // const { handleDismiss, handleSearch } = this.state;
-    return (
-      <div className="page">
-        <div className="interactions">
-          <Search searchTerm={searchTerm} onSearchChange={this.handleSearch} />
-        </div>
+    if (!result) {
+      return <div>{"No data found."}</div>;
+    } else {
+      console.log("data to be rendered is : ", result);
+      return (
+        <div className="page">
+          <div className="interactions">
+            <Search
+              searchTerm={searchTerm}
+              onSearchChange={this.handleSearch}
+            />
+          </div>
 
-        <Table
-          news={news}
-          searchTerm={searchTerm}
-          onDismiss={this.handleDismiss}
-        />
-      </div>
-    );
+          <Table
+            news={result.hits}
+            searchTerm={searchTerm}
+            onDismiss={this.handleDismiss}
+          />
+        </div>
+      );
+    }
   }
 }
 
@@ -86,15 +107,16 @@ function Table(props) {
     <div className="table">
       {news.filter(isSearched(searchTerm)).map((item) => {
         return (
-          <div className="table-row" key={item.id}>
-            <span style={{ width: "40%" }}>
+          <div className="table-row" key={item.objectID}>
+            <span style={{ width: "60%" }}>
               <a href={item.url}>{item.title}</a>
             </span>
-            <span style={{ width: "40%" }}>{item.points}</span>
-            <span style={{ width: "10%" }}>{item.comments}</span>
+            <span style={{ width: "10%" }}>{item.author}</span>
+            <span style={{ width: "5%" }}>{item.points}</span>
+            <span style={{ width: "5%" }}>{item.num_comments}</span>
             <span style={{ width: "10%" }}>
               <Button
-                onClick={() => onDismiss(item.id)}
+                onClick={() => onDismiss(item.objectID)}
                 className="button-inline"
               >
                 {" Dismiss "}
