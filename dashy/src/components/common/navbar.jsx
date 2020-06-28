@@ -1,80 +1,56 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 class NavBar extends Component {
   state = {};
   render() {
     return (
-      <nav id="sidebar">
-        <div className="sidebar-header">
-          <h3>Quickedge Oculus</h3>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container-fluid">
+          <button type="button" id="sidebarCollapse" className="btn btn-info">
+            <i className="fas fa-align-left"></i>
+            <span>Toggle Sidebar</span>
+          </button>
+          <button
+            className="btn btn-dark d-inline-block d-lg-none ml-auto"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i className="fas fa-align-justify"></i>
+          </button>
+
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="nav navbar-nav ml-auto">
+              <li className="nav-item active">
+                <NavLink className="nav-link" to="#">
+                  Page
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="#">
+                  Page
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="#">
+                  Page
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="#">
+                  Page
+                </NavLink>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul className="list-unstyled components">
-          <li className="active">
-            <a
-              href="#homeSubmenu"
-              data-toggle="collapse"
-              aria-expanded="false"
-              class="dropdown-toggle"
-            >
-              <i className="fas fa-home"></i>
-              Dashboard
-            </a>
-            <ul className="collapse list-unstyled" id="homeSubmenu">
-              <li>
-                <a href="#">Model Stats</a>
-              </li>
-              <li>
-                <a href="#">System Stats</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">
-              <i className="fas fa-briefcase"></i>
-              Clients
-            </a>
-            <a
-              href="#pageSubmenu"
-              data-toggle="collapse"
-              aria-expanded="false"
-              class="dropdown-toggle"
-            >
-              <i className="fas fa-copy"></i>
-              Tasks
-            </a>
-            <ul className="collapse list-unstyled" id="pageSubmenu">
-              <li>
-                <a href="#">Recognition Tasks</a>
-              </li>
-              <li>
-                <a href="#">Relearn Tasks</a>
-              </li>
-              <li>
-                <a href="#">Model Tasks</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">
-              <i className="fas fa-image"></i>
-              Portfolio
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i className="fas fa-question"></i>
-              Docs
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i className="fas fa-paper-plane"></i>
-              Support
-            </a>
-          </li>
-        </ul>
       </nav>
     );
   }
 }
+
 export default NavBar;

@@ -62,7 +62,6 @@ span {
   background: #36454f;
   color: #fff;
   transition: all 0.3s;
-  min-height: 100vh;
 }
 
 #sidebar.active {
@@ -122,7 +121,7 @@ span {
 
 #sidebar ul.components {
   padding: 20px 0;
-  border-bottom: 1px solid #708090;
+  border-bottom: 1px solid #536872;
 }
 
 #sidebar ul li a {
@@ -143,7 +142,7 @@ span {
 #sidebar ul li.active > a,
 a[aria-expanded="true"] {
   color: #fff;
-  background: #708090;
+  background: #536878;
 }
 
 a[data-toggle="collapse"] {
@@ -161,19 +160,7 @@ a[data-toggle="collapse"] {
 ul ul a {
   font-size: 0.9em !important;
   padding-left: 30px !important;
-  background: #708090;
-}
-
-ul.CTAs {
-  padding: 20px;
-}
-
-ul.CTAs a {
-  text-align: center;
-  font-size: 0.9em !important;
-  display: block;
-  border-radius: 5px;
-  margin-bottom: 5px;
+  background: #536878;
 }
 
 /* ---------------------------------------------------
@@ -216,7 +203,7 @@ ul.CTAs a {
   #sidebar .sidebar-header strong {
     display: block;
   }
-  #sidebar ul li a {
+  #sidebar ul li {
     padding: 20px 10px;
   }
   #sidebar ul li a span {
