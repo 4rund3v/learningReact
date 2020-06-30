@@ -20,6 +20,7 @@
 - Routers
 - Links & Nav Links
 - Component life cycle methods
+- Hooks
 
 ## Projects
 
