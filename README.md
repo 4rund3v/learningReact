@@ -4,7 +4,7 @@
 - [x] Get started with react
 - [x] React Antd for UI framework
 - [ ] React Dashboard
-- [ ] Build basic apps
+- [x] Build basic apps
 
 ## Fundamentals of Javascript
 
