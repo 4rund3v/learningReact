@@ -6,7 +6,7 @@
 - [ ] React Dashboard
 - [x] Build basic apps
 - [ ] SPA
-- [ ] SFA & Class components
+- [x] SFA & Class components
 
 ## Fundamentals of Javascript
 
