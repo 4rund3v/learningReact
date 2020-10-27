@@ -3,47 +3,35 @@ import { Button } from "react-bootstrap";
 
 class Counter extends Component {
   state = {
-    count: 0,
-    products: ["PS4", "XboxS", "Switch"],
+    id: this.props.prod.id,
+    name: this.props.prod.name,
+    value: this.props.prod.value,
   };
 
   styles = {
     fontSize: 20,
   };
 
-  handleIncrement = (e) => {
-    console.log(e);
-    this.setState({ count: this.state.count + 1 });
+  getBadgeClasses = (value) => {
+    let spanClasses = "badge m-2 badge-";
+    spanClasses += value <= 0 ? "secondary" : "primary";
+    return spanClasses;
   };
 
-  getBadgeClasses() {
-    let spanClasses = "badge m-2 badge-";
-    spanClasses += this.state.count <= 0 ? "secondary" : "primary";
-    return spanClasses;
-  }
-
   render() {
+    const { id, name, value } = this.state;
     return (
       <React.Fragment>
-        <ul>
-          {this.state.products.map((prod) => {
-            const elem = (
-              <li key={prod}>
-                {" "}
-                <span style={this.styles} className={this.getBadgeClasses()}>
-                  {this.state.count}
-                </span>
-                <Button
-                  variant="primary"
-                  onClick={() => this.handleIncrement(prod)}
-                >
-                  Increment
-                </Button>{" "}
-              </li>
-            );
-            return elem;
-          })}
-        </ul>
+        {this.props.name}
+        <span style={this.styles} className={this.getBadgeClasses(value)}>
+          {this.state.value}
+        </span>
+        <Button variant="primary" onClick={() => this.props.onIncrement(id)}>
+          Increment
+        </Button>{" "}
+        <Button variant="danger" onClick={() => this.props.onDelete(id)}>
+          Delete
+        </Button>{" "}
       </React.Fragment>
     );
   }
