@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 class NavBar extends Component {
-    state = {  }
-    render() { 
-        return (  );
-    }
+  state = {};
+  render() {
+    return <div>NavBar</div>;
+  }
 }
- 
+
 export default NavBar;
