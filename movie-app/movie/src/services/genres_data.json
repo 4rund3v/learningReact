@@ -1,24 +1,32 @@
 {
     "genres": [
         {
-            "_id": "37312212-179a-11eb-9e4f-e5f7bf0748df",
-            "genre": ""
+            "_id": "0c66b48d-1b4c-11eb-828e-f07959967e21",
+            "genre": "Animated"
         },
         {
-            "_id": "37312213-179a-11eb-828b-e5f7bf0748df",
-            "genre": ""
+            "_id": "0c66b48e-1b4c-11eb-a3d1-f07959967e21",
+            "genre": "Thriller"
         },
         {
-            "_id": "37312214-179a-11eb-83ac-e5f7bf0748df",
-            "genre": ""
+            "_id": "0c66b48f-1b4c-11eb-a49d-f07959967e21",
+            "genre": "Adventure"
         },
         {
-            "_id": "37312215-179a-11eb-b080-e5f7bf0748df",
-            "genre": ""
+            "_id": "0c66b490-1b4c-11eb-9656-f07959967e21",
+            "genre": "Romantic"
         },
         {
-            "_id": "37312216-179a-11eb-8b21-e5f7bf0748df",
-            "genre": ""
+            "_id": "0c66b491-1b4c-11eb-8ab5-f07959967e21",
+            "genre": "Story"
+        },
+        {
+            "_id": "0c66b492-1b4c-11eb-8a35-f07959967e21",
+            "genre": "Comedy"
+        },
+        {
+            "_id": "0c66b493-1b4c-11eb-810c-f07959967e21",
+            "genre": "Action"
         }
     ]
 }

@@ -1,480 +1,625 @@
 {
     "movies": [
         {
-            "_id": "cbc7c378-1790-11eb-97a2-e5f7bf0748df",
-            "genre": "",
+            "_id": "0c63a746-1b4c-11eb-b3a3-f07959967e21",
+            "genre": "0c66b491-1b4c-11eb-8ab5-f07959967e21",
+            "language": "tam",
+            "liked": false,
             "name": "The Last - Naruto the Movie v2.mkv",
-            "stock": 10,
-            "year": 2020
+            "path": "D:\\MOVIES\\ The Last - Naruto the Movie v2.mkv",
+            "year": 2005
         },
         {
-            "_id": "cbc7c379-1790-11eb-afad-e5f7bf0748df",
-            "genre": "",
-            "name": "2 States 2014 Hindi 1080p",
-            "stock": 2,
-            "year": 2020
-        },
-        {
-            "_id": "cbc7c37a-1790-11eb-ba79-e5f7bf0748df",
-            "genre": "",
-            "name": "Borat.2.Subsequent.Moviefilm.2020.HDRip.XviD.AC3-EVO[TGx]",
-            "stock": 1,
-            "year": 2020
-        },
-        {
-            "_id": "cbc7c37b-1790-11eb-b022-e5f7bf0748df",
-            "genre": "",
-            "name": "Chennai Express 2013 1080p",
-            "stock": 7,
-            "year": 2020
-        },
-        {
-            "_id": "cbc7c37c-1790-11eb-9dc5-e5f7bf0748df",
-            "genre": "",
-            "name": "Dear Zindagi",
-            "stock": 10,
-            "year": 2020
-        },
-        {
-            "_id": "cbc7c37d-1790-11eb-ae64-e5f7bf0748df",
-            "genre": "",
-            "name": "Dolemite Is My Name (2019) [WEBRip] [1080p] [YTS.LT]",
-            "stock": 2,
-            "year": 2020
-        },
-        {
-            "_id": "cbc7c37e-1790-11eb-80f9-e5f7bf0748df",
-            "genre": "",
+            "_id": "0c63a747-1b4c-11eb-bb58-f07959967e21",
+            "genre": "0c66b492-1b4c-11eb-8a35-f07959967e21",
+            "language": "tam",
+            "liked": false,
             "name": "English Medium (2020).mkv",
-            "stock": 5,
+            "path": "D:\\MOVIES\\English Medium (2020).mkv",
+            "year": 2003
+        },
+        {
+            "_id": "0c63a748-1b4c-11eb-8ace-f07959967e21",
+            "genre": "0c66b48d-1b4c-11eb-828e-f07959967e21",
+            "language": "eng",
+            "liked": false,
+            "name": "Borat.2.Subsequent.Moviefilm.2020.avi",
+            "path": "D:\\MOVIES\\Borat.2.Subsequent.Moviefilm.2020.HDRip.XviD.AC3-EVO[TGx]\\Borat.2.Subsequent.Moviefilm.2020.avi",
+            "year": 2007
+        },
+        {
+            "_id": "0c63a749-1b4c-11eb-ab7a-f07959967e21",
+            "genre": "0c66b491-1b4c-11eb-8ab5-f07959967e21",
+            "language": "kan",
+            "liked": false,
+            "name": "Chennai Express 2013 1080p BluRay x264 Hindi AAC - Ozlem.mp4",
+            "path": "D:\\MOVIES\\Chennai Express 2013 1080p\\Chennai Express 2013 1080p BluRay x264 Hindi AAC - Ozlem.mp4",
+            "year": 2005
+        },
+        {
+            "_id": "0c63a74a-1b4c-11eb-8c4e-f07959967e21",
+            "genre": "0c66b48d-1b4c-11eb-828e-f07959967e21",
+            "language": "tel",
+            "liked": false,
+            "name": "Batman Begins 2005 720p BluRay x264 Ganool.mkv",
+            "path": "D:\\MOVIES\\DC Movies\\Batman Begins 2005 720p BluRay x264 Ganool.mkv",
+            "year": 2013
+        },
+        {
+            "_id": "0c63a74b-1b4c-11eb-82d2-f07959967e21",
+            "genre": "0c66b48e-1b4c-11eb-a3d1-f07959967e21",
+            "language": "eng",
+            "liked": false,
+            "name": "Batman v Superman - Dawn of Justice (2016) Ult. Edition 1080p 10bit Bluray x265 HEVC [Org DD 5.1 Hindi + DD 5.1 English] ESub ~ TombDoc.mkv",
+            "path": "D:\\MOVIES\\DC Movies\\Batman v Superman - Dawn of Justice (2016) Ult. Edition 1080p 10bit Bluray x265 HEVC [Org DD 5.1 Hindi + DD 5.1 English] ESub ~ TombDoc.mkv",
+            "year": 2012
+        },
+        {
+            "_id": "0c63a74c-1b4c-11eb-a5c2-f07959967e21",
+            "genre": "0c66b491-1b4c-11eb-8ab5-f07959967e21",
+            "language": "jap",
+            "liked": false,
+            "name": "Batman v Superman Dawn of Justice 2016 720p BluRay x264 Ganool.mkv",
+            "path": "D:\\MOVIES\\DC Movies\\Batman v Superman Dawn of Justice 2016 720p BluRay x264 Ganool.mkv",
+            "year": 2001
+        },
+        {
+            "_id": "0c63a74d-1b4c-11eb-9cdc-f07959967e21",
+            "genre": "0c66b492-1b4c-11eb-8a35-f07959967e21",
+            "language": "jap",
+            "liked": false,
+            "name": "Justice League (2017) 1080p 10bit Bluray x265 HEVC [Org UHD BD 5.1 Hindi + DD 5.1 English] MSubs ~ TombDoc.mkv",
+            "path": "D:\\MOVIES\\DC Movies\\Justice League (2017) 1080p 10bit Bluray x265 HEVC [Org UHD BD 5.1 Hindi + DD 5.1 English] MSubs ~ TombDoc.mkv",
+            "year": 2018
+        },
+        {
+            "_id": "0c63a74e-1b4c-11eb-b58d-f07959967e21",
+            "genre": "0c66b48e-1b4c-11eb-a3d1-f07959967e21",
+            "language": "hin",
+            "liked": false,
+            "name": "Man of Steel (2013) 1080p 10bit Bluray x265 HEVC [Org DD 5.1 Hindi + DD 5.1 English] ESub ~ TombDoc.mkv",
+            "path": "D:\\MOVIES\\DC Movies\\Man of Steel (2013) 1080p 10bit Bluray x265 HEVC [Org DD 5.1 Hindi + DD 5.1 English] ESub ~ TombDoc.mkv",
+            "year": 2014
+        },
+        {
+            "_id": "0c63a74f-1b4c-11eb-bd01-f07959967e21",
+            "genre": "0c66b48e-1b4c-11eb-a3d1-f07959967e21",
+            "language": "kan",
+            "liked": false,
+            "name": "Suicide Squad (2016) Extended Cut 1080p 10bit Bluray x265 HEVC English DDP 5.1 ESub ~ TombDoc.mkv",
+            "path": "D:\\MOVIES\\DC Movies\\Suicide Squad (2016) Extended Cut 1080p 10bit Bluray x265 HEVC English DDP 5.1 ESub ~ TombDoc.mkv",
+            "year": 2006
+        },
+        {
+            "_id": "0c63a750-1b4c-11eb-8a1b-f07959967e21",
+            "genre": "0c66b492-1b4c-11eb-8a35-f07959967e21",
+            "language": "tam",
+            "liked": false,
+            "name": "The Dark Knight 2008 720p BluRay x264 Ganool.mkv",
+            "path": "D:\\MOVIES\\DC Movies\\The Dark Knight 2008 720p BluRay x264 Ganool.mkv",
+            "year": 2016
+        },
+        {
+            "_id": "0c63a751-1b4c-11eb-94f6-f07959967e21",
+            "genre": "0c66b490-1b4c-11eb-9656-f07959967e21",
+            "language": "jap",
+            "liked": false,
+            "name": "The Dark Knight Rises 2012 720p BluRay x264 Ganool.mkv",
+            "path": "D:\\MOVIES\\DC Movies\\The Dark Knight Rises 2012 720p BluRay x264 Ganool.mkv",
+            "year": 2012
+        },
+        {
+            "_id": "0c63a752-1b4c-11eb-8b15-f07959967e21",
+            "genre": "0c66b48f-1b4c-11eb-a49d-f07959967e21",
+            "language": "kan",
+            "liked": false,
+            "name": "Wonder Woman (2017) 1080p 10bit Bluray x265 HEVC English DDP 5.1 MSubs ~ TombDoc.mkv",
+            "path": "D:\\MOVIES\\DC Movies\\Wonder Woman (2017) 1080p 10bit Bluray x265 HEVC English DDP 5.1 MSubs ~ TombDoc.mkv",
+            "year": 2018
+        },
+        {
+            "_id": "0c63a753-1b4c-11eb-b429-f07959967e21",
+            "genre": "0c66b491-1b4c-11eb-8ab5-f07959967e21",
+            "language": "jap",
+            "liked": false,
+            "name": "Dolemite.Is.My.Name.2019.1080p.WEBRip.x264-[YTS.LT].mp4",
+            "path": "D:\\MOVIES\\Dolemite Is My Name (2019) [WEBRip] [1080p] [YTS.LT]\\Dolemite.Is.My.Name.2019.1080p.WEBRip.x264-[YTS.LT].mp4",
+            "year": 2003
+        },
+        {
+            "_id": "0c646a94-1b4c-11eb-b431-f07959967e21",
+            "genre": "0c66b48f-1b4c-11eb-a49d-f07959967e21",
+            "language": "tel",
+            "liked": false,
+            "name": "Ginny.Weds.Sunny.2020.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4",
+            "path": "D:\\MOVIES\\Ginny Weds Sunny (2020)\\Ginny.Weds.Sunny.2020.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4",
+            "year": 2018
+        },
+        {
+            "_id": "0c646a95-1b4c-11eb-853d-f07959967e21",
+            "genre": "0c66b48d-1b4c-11eb-828e-f07959967e21",
+            "language": "eng",
+            "liked": false,
+            "name": "Grave.Of.The.Fireflies.1988.1080p.BluRay.x264-[YTS.AM].mp4",
+            "path": "D:\\MOVIES\\Grave Of The Fireflies (1988)   \\Grave.Of.The.Fireflies.1988.1080p.BluRay.x264-[YTS.AM].mp4",
+            "year": 2018
+        },
+        {
+            "_id": "0c646a96-1b4c-11eb-b3bf-f07959967e21",
+            "genre": "0c66b48f-1b4c-11eb-a49d-f07959967e21",
+            "language": "tam",
+            "liked": false,
+            "name": "Hellboy.2019.1080p.WEBRip.x264-[YTS.LT].mp4",
+            "path": "D:\\MOVIES\\Hellboy (2019)   \\Hellboy.2019.1080p.WEBRip.x264-[YTS.LT].mp4",
+            "year": 2014
+        },
+        {
+            "_id": "0c646a97-1b4c-11eb-9465-f07959967e21",
+            "genre": "0c66b493-1b4c-11eb-810c-f07959967e21",
+            "language": "jap",
+            "liked": false,
+            "name": "alt-torrent.com.mp4",
+            "path": "D:\\MOVIES\\Hey Arnold - The Jungle Movie (2017)\\alt-torrent.com.mp4",
+            "year": 2014
+        },
+        {
+            "_id": "0c646a98-1b4c-11eb-b18a-f07959967e21",
+            "genre": "0c66b493-1b4c-11eb-810c-f07959967e21",
+            "language": "eng",
+            "liked": false,
+            "name": "Hey Arnold - The Jungle Movie (2017) WEBDL LAT - ZeiZ.mkv",
+            "path": "D:\\MOVIES\\Hey Arnold - The Jungle Movie (2017)\\Hey Arnold - The Jungle Movie (2017) WEBDL LAT - ZeiZ.mkv",
+            "year": 2001
+        },
+        {
+            "_id": "0c646a99-1b4c-11eb-898b-f07959967e21",
+            "genre": "0c66b491-1b4c-11eb-8ab5-f07959967e21",
+            "language": "tel",
+            "liked": false,
+            "name": "How.To.Train.Your.Dragon.2010.1080p.BrRip.x264.YIFY.mp4",
+            "path": "D:\\MOVIES\\How To Train Your Dragon (2010) \\How.To.Train.Your.Dragon.2010.1080p.BrRip.x264.YIFY.mp4",
+            "year": 2019
+        },
+        {
+            "_id": "0c646a9a-1b4c-11eb-b6b9-f07959967e21",
+            "genre": "0c66b48f-1b4c-11eb-a49d-f07959967e21",
+            "language": "hin",
+            "liked": false,
+            "name": "How.to.Train.Your.Dragon.2.2014.1080p.BluRay.x264.YIFY.mp4",
+            "path": "D:\\MOVIES\\How to Train Your Dragon 2 (2014) \\How.to.Train.Your.Dragon.2.2014.1080p.BluRay.x264.YIFY.mp4",
+            "year": 2008
+        },
+        {
+            "_id": "0c646a9b-1b4c-11eb-ad8f-f07959967e21",
+            "genre": "0c66b492-1b4c-11eb-8a35-f07959967e21",
+            "language": "kan",
+            "liked": false,
+            "name": "01 Indiana Jones And The Raiders Of The Lost Ark - 1981 Eng Subs 1080p [H264-mp4].mp4",
+            "path": "D:\\MOVIES\\Indiana Jones 1, 2, 3, 4 - Complete Collection 1981-2008 Eng Subs 1080p \\Indiana Jones Complete Collection 1981-2008\\01 Indiana Jones And The Raiders Of The Lost Ark - 1981 Eng Subs 1080p [H264-mp4].mp4",
+            "year": 2019
+        },
+        {
+            "_id": "0c646a9c-1b4c-11eb-a3d5-f07959967e21",
+            "genre": "0c66b493-1b4c-11eb-810c-f07959967e21",
+            "language": "kan",
+            "liked": false,
+            "name": "02 Indiana Jones And The Temple Of Doom - 1984 Eng Subs 1080p [H264-mp4].mp4",
+            "path": "D:\\MOVIES\\Indiana Jones 1, 2, 3, 4 - Complete Collection 1981-2008 Eng Subs 1080p \\Indiana Jones Complete Collection 1981-2008\\02 Indiana Jones And The Temple Of Doom - 1984 Eng Subs 1080p [H264-mp4].mp4",
+            "year": 2015
+        },
+        {
+            "_id": "0c646a9d-1b4c-11eb-82f9-f07959967e21",
+            "genre": "0c66b48f-1b4c-11eb-a49d-f07959967e21",
+            "language": "tel",
+            "liked": false,
+            "name": "03 Indiana Jones And The Last Crusade - 1989 Eng Subs 1080p [H264-mp4].mp4",
+            "path": "D:\\MOVIES\\Indiana Jones 1, 2, 3, 4 - Complete Collection 1981-2008 Eng Subs 1080p \\Indiana Jones Complete Collection 1981-2008\\03 Indiana Jones And The Last Crusade - 1989 Eng Subs 1080p [H264-mp4].mp4",
+            "year": 2005
+        },
+        {
+            "_id": "0c646a9e-1b4c-11eb-8e6f-f07959967e21",
+            "genre": "0c66b491-1b4c-11eb-8ab5-f07959967e21",
+            "language": "eng",
+            "liked": false,
+            "name": "04 Indiana Jones And The Kingdom Of The Crystal Skull - 2008 Eng Subs 1080p [H264-mp4].mp4",
+            "path": "D:\\MOVIES\\Indiana Jones 1, 2, 3, 4 - Complete Collection 1981-2008 Eng Subs 1080p \\Indiana Jones Complete Collection 1981-2008\\04 Indiana Jones And The Kingdom Of The Crystal Skull - 2008 Eng Subs 1080p [H264-mp4].mp4",
             "year": 2020
         },
         {
-            "_id": "cbc7c37f-1790-11eb-83f0-e5f7bf0748df",
-            "genre": "",
-            "name": "Fantastic Beasts The Crimes of Grindelwald (2018).mkv",
-            "stock": 2,
+            "_id": "0c652de4-1b4c-11eb-bc4e-f07959967e21",
+            "genre": "0c66b48d-1b4c-11eb-828e-f07959967e21",
+            "language": "eng",
+            "liked": false,
+            "name": "Interstellar.2014.2014.1080p.BluRay.x264.YIFY.mp4",
+            "path": "D:\\MOVIES\\Interstellar (2014) (2014) \\Interstellar.2014.2014.1080p.BluRay.x264.YIFY.mp4",
+            "year": 2018
+        },
+        {
+            "_id": "0c652de5-1b4c-11eb-be90-f07959967e21",
+            "genre": "0c66b48f-1b4c-11eb-a49d-f07959967e21",
+            "language": "eng",
+            "liked": false,
+            "name": "jobs2013.mp4",
+            "path": "D:\\MOVIES\\Jobs\\jobs2013.mp4",
+            "year": 2005
+        },
+        {
+            "_id": "0c652de6-1b4c-11eb-84dc-f07959967e21",
+            "genre": "0c66b48e-1b4c-11eb-a3d1-f07959967e21",
+            "language": "eng",
+            "liked": false,
+            "name": "Joker.2019.1080p.BluRay.x264-[YTS.LT].mp4",
+            "path": "D:\\MOVIES\\Joker (2019)   \\Joker.2019.1080p.BluRay.x264-[YTS.LT].mp4",
+            "year": 2017
+        },
+        {
+            "_id": "0c652de7-1b4c-11eb-a9a1-f07959967e21",
+            "genre": "0c66b492-1b4c-11eb-8a35-f07959967e21",
+            "language": "hin",
+            "liked": false,
+            "name": "Klaus.2019.1080p.WEBRip.x264-[YTS.LT].mp4",
+            "path": "D:\\MOVIES\\Klaus (2019)   \\Klaus.2019.1080p.WEBRip.x264-[YTS.LT].mp4",
+            "year": 2019
+        },
+        {
+            "_id": "0c652de8-1b4c-11eb-8ce4-f07959967e21",
+            "genre": "0c66b493-1b4c-11eb-810c-f07959967e21",
+            "language": "eng",
+            "liked": false,
+            "name": "Knives.Out.2019.1080p.BluRay.x264.AAC-[YTS.MX].mp4",
+            "path": "D:\\MOVIES\\Knives Out (2019)   \\Knives.Out.2019.1080p.BluRay.x264.AAC-[YTS.MX].mp4",
+            "year": 2011
+        },
+        {
+            "_id": "0c652de9-1b4c-11eb-bdf7-f07959967e21",
+            "genre": "0c66b48d-1b4c-11eb-828e-f07959967e21",
+            "language": "jap",
+            "liked": false,
+            "name": "Logan.Lucky.2017.1080p.BluRay.x264-[YTS.AM].mp4",
+            "path": "D:\\MOVIES\\Logan Lucky (2017)  \\Logan.Lucky.2017.1080p.BluRay.x264-[YTS.AM].mp4",
+            "year": 2011
+        },
+        {
+            "_id": "0c652dea-1b4c-11eb-9890-f07959967e21",
+            "genre": "0c66b48e-1b4c-11eb-a3d1-f07959967e21",
+            "language": "eng",
+            "liked": false,
+            "name": "Moneyball.2011.REMASTERED.1080p.BluRay.H264.AAC-RARBG.mp4",
+            "path": "D:\\MOVIES\\Moneyball.2011.REMASTERED.1080p.BluRay.H264.AAC-RARBG\\Moneyball.2011.REMASTERED.1080p.BluRay.H264.AAC-RARBG.mp4",
+            "year": 2001
+        },
+        {
+            "_id": "0c652deb-1b4c-11eb-a1ae-f07959967e21",
+            "genre": "0c66b490-1b4c-11eb-9656-f07959967e21",
+            "language": "jap",
+            "liked": false,
+            "name": "01 Monty Python And Now For Something Completely Different - 1971 Eng Subs 1080p [H264-mp4].mp4",
+            "path": "D:\\MOVIES\\Monty Python The Movies 1, 2, 3, 4 - Comedy 1971-1983 Eng Subs 1080p \\Monty Python The Movies 1971-1983\\01 Monty Python And Now For Something Completely Different - 1971 Eng Subs 1080p [H264-mp4].mp4",
+            "year": 2004
+        },
+        {
+            "_id": "0c652dec-1b4c-11eb-89ca-f07959967e21",
+            "genre": "0c66b48e-1b4c-11eb-a3d1-f07959967e21",
+            "language": "jap",
+            "liked": false,
+            "name": "02 Monty Python And The Holy Grail - 1975 Eng Subs 1080p [H264-mp4].mp4",
+            "path": "D:\\MOVIES\\Monty Python The Movies 1, 2, 3, 4 - Comedy 1971-1983 Eng Subs 1080p \\Monty Python The Movies 1971-1983\\02 Monty Python And The Holy Grail - 1975 Eng Subs 1080p [H264-mp4].mp4",
+            "year": 2012
+        },
+        {
+            "_id": "0c652ded-1b4c-11eb-8c64-f07959967e21",
+            "genre": "0c66b493-1b4c-11eb-810c-f07959967e21",
+            "language": "tel",
+            "liked": false,
+            "name": "03 Monty Python's Life Of Brian - 1979 Eng Subs 1080p [H264-mp4].mp4",
+            "path": "D:\\MOVIES\\Monty Python The Movies 1, 2, 3, 4 - Comedy 1971-1983 Eng Subs 1080p \\Monty Python The Movies 1971-1983\\03 Monty Python's Life Of Brian - 1979 Eng Subs 1080p [H264-mp4].mp4",
+            "year": 2003
+        },
+        {
+            "_id": "0c652dee-1b4c-11eb-8bd2-f07959967e21",
+            "genre": "0c66b493-1b4c-11eb-810c-f07959967e21",
+            "language": "hin",
+            "liked": false,
+            "name": "04 Monty Python's The Meaning Of Life - 30th Anniversary Edition 1983 Eng Subs 1080p [H264-mp4].mp4",
+            "path": "D:\\MOVIES\\Monty Python The Movies 1, 2, 3, 4 - Comedy 1971-1983 Eng Subs 1080p \\Monty Python The Movies 1971-1983\\04 Monty Python's The Meaning Of Life - 30th Anniversary Edition 1983 Eng Subs 1080p [H264-mp4].mp4",
+            "year": 2011
+        },
+        {
+            "_id": "0c652def-1b4c-11eb-b0a7-f07959967e21",
+            "genre": "0c66b490-1b4c-11eb-9656-f07959967e21",
+            "language": "jap",
+            "liked": false,
+            "name": "Murder.On.The.Orient.Express.2017.1080p.BluRay.x264-[YTS.AG].mp4",
+            "path": "D:\\MOVIES\\Murder On The Orient Express (2017) [1080p] [YTS.AG]\\Murder.On.The.Orient.Express.2017.1080p.BluRay.x264-[YTS.AG].mp4",
+            "year": 2008
+        },
+        {
+            "_id": "0c652df0-1b4c-11eb-884c-f07959967e21",
+            "genre": "0c66b48e-1b4c-11eb-a3d1-f07959967e21",
+            "language": "kan",
+            "liked": false,
+            "name": "Onward.2020.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4",
+            "path": "D:\\MOVIES\\Onward (2020)    \\Onward.2020.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4",
+            "year": 2001
+        },
+        {
+            "_id": "0c652df1-1b4c-11eb-b2c4-f07959967e21",
+            "genre": "0c66b48e-1b4c-11eb-a3d1-f07959967e21",
+            "language": "tam",
+            "liked": false,
+            "name": "Piper.2016.1080p.BluRay.H264.AAC-RARBG.mp4",
+            "path": "D:\\MOVIES\\Piper.2016.1080p.BluRay.H264.AAC-RARBG\\Piper.2016.1080p.BluRay.H264.AAC-RARBG.mp4",
+            "year": 2012
+        },
+        {
+            "_id": "0c652df2-1b4c-11eb-9b95-f07959967e21",
+            "genre": "0c66b48d-1b4c-11eb-828e-f07959967e21",
+            "language": "eng",
+            "liked": false,
+            "name": "Playing.It.Cool.2014.1080p.BluRay.H264.AAC-RARBG.mp4",
+            "path": "D:\\MOVIES\\Playing.It.Cool.2014.1080p.BluRay.H264.AAC-RARBG\\Playing.It.Cool.2014.1080p.BluRay.H264.AAC-RARBG.mp4",
+            "year": 2003
+        },
+        {
+            "_id": "0c652df3-1b4c-11eb-a79e-f07959967e21",
+            "genre": "0c66b493-1b4c-11eb-810c-f07959967e21",
+            "language": "hin",
+            "liked": false,
+            "name": "Premam.2015.BRRip.720p.x264.Malayalam.ESubs-ViZNU.mp4",
+            "path": "D:\\MOVIES\\Premam.2015\\Premam.2015.BRRip.720p.x264.Malayalam.ESubs-ViZNU.mp4",
+            "year": 2000
+        },
+        {
+            "_id": "0c652df4-1b4c-11eb-8c68-f07959967e21",
+            "genre": "0c66b491-1b4c-11eb-8ab5-f07959967e21",
+            "language": "tam",
+            "liked": false,
+            "name": "Sample.mp4",
+            "path": "D:\\MOVIES\\Premam.2015\\Sample.mp4",
+            "year": 2007
+        },
+        {
+            "_id": "0c65f136-1b4c-11eb-84b1-f07959967e21",
+            "genre": "0c66b48e-1b4c-11eb-a3d1-f07959967e21",
+            "language": "tel",
+            "liked": false,
+            "name": "Princess.Mononoke.1997.1080p.BluRay.x264-[YTS.AM].mp4",
+            "path": "D:\\MOVIES\\Princess Mononoke (1997)   \\Princess.Mononoke.1997.1080p.BluRay.x264-[YTS.AM].mp4",
+            "year": 2013
+        },
+        {
+            "_id": "0c65f137-1b4c-11eb-986d-f07959967e21",
+            "genre": "0c66b490-1b4c-11eb-9656-f07959967e21",
+            "language": "jap",
+            "liked": false,
+            "name": "Shazam!.2019.1080p.BluRay.x264-[YTS.LT].mp4",
+            "path": "D:\\MOVIES\\Shazam! (2019)   \\Shazam!.2019.1080p.BluRay.x264-[YTS.LT].mp4",
+            "year": 2011
+        },
+        {
+            "_id": "0c65f138-1b4c-11eb-a695-f07959967e21",
+            "genre": "0c66b492-1b4c-11eb-8a35-f07959967e21",
+            "language": "tel",
+            "liked": false,
+            "name": "Smallfoot.2018.720p.BluRay.x264-[YTS.AM].mp4",
+            "path": "D:\\MOVIES\\Smallfoot (2018)   \\Smallfoot.2018.720p.BluRay.x264-[YTS.AM].mp4",
+            "year": 2013
+        },
+        {
+            "_id": "0c65f139-1b4c-11eb-b0c7-f07959967e21",
+            "genre": "0c66b491-1b4c-11eb-8ab5-f07959967e21",
+            "language": "tam",
+            "liked": false,
+            "name": "Spirited.Away.2001.1080p.BluRay.x264-[YTS.AM].mp4",
+            "path": "D:\\MOVIES\\Spirited Away (2001)   \\Spirited.Away.2001.1080p.BluRay.x264-[YTS.AM].mp4",
+            "year": 2018
+        },
+        {
+            "_id": "0c65f13a-1b4c-11eb-ba6f-f07959967e21",
+            "genre": "0c66b48f-1b4c-11eb-a49d-f07959967e21",
+            "language": "jap",
+            "liked": false,
+            "name": "Steve.Jobs.The.Man.in.the.Machine.2015.720p.BluRay.x264.[YTS.AG].mp4",
+            "path": "D:\\MOVIES\\Steve Jobs The Man In The Machine (2015)\\Steve.Jobs.The.Man.in.the.Machine.2015.720p.BluRay.x264.[YTS.AG].mp4",
+            "year": 2007
+        },
+        {
+            "_id": "0c65f13b-1b4c-11eb-8117-f07959967e21",
+            "genre": "0c66b493-1b4c-11eb-810c-f07959967e21",
+            "language": "eng",
+            "liked": false,
+            "name": "KANNUM KANNUM KOLLAIYADITHAAL (2020).mkv",
+            "path": "D:\\MOVIES\\Tamil\\KANNUM KANNUM KOLLAIYADITHAAL (2020).mkv",
             "year": 2020
         },
         {
-            "_id": "cbc7c380-1790-11eb-83e9-e5f7bf0748df",
-            "genre": "",
-            "name": "Ginny Weds Sunny (2020)",
-            "stock": 5,
+            "_id": "0c65f13c-1b4c-11eb-8446-f07959967e21",
+            "genre": "0c66b48d-1b4c-11eb-828e-f07959967e21",
+            "language": "hin",
+            "liked": false,
+            "name": "Oh My Kadavule (2020).mkv",
+            "path": "D:\\MOVIES\\Tamil\\Oh My Kadavule (2020).mkv",
+            "year": 2004
+        },
+        {
+            "_id": "0c65f13d-1b4c-11eb-a612-f07959967e21",
+            "genre": "0c66b48f-1b4c-11eb-a49d-f07959967e21",
+            "language": "tam",
+            "liked": false,
+            "name": "Pattas.mkv",
+            "path": "D:\\MOVIES\\Tamil\\Pattas.mkv",
             "year": 2020
         },
         {
-            "_id": "cbc7c381-1790-11eb-bb50-e5f7bf0748df",
-            "genre": "",
-            "name": "Grave Of The Fireflies (1988)",
-            "stock": 2,
+            "_id": "0c65f13e-1b4c-11eb-8bcb-f07959967e21",
+            "genre": "0c66b490-1b4c-11eb-9656-f07959967e21",
+            "language": "eng",
+            "liked": false,
+            "name": "Theri (2016).mkv",
+            "path": "D:\\MOVIES\\Tamil\\Theri (2016).mkv",
+            "year": 2007
+        },
+        {
+            "_id": "0c65f13f-1b4c-11eb-9955-f07959967e21",
+            "genre": "0c66b48f-1b4c-11eb-a49d-f07959967e21",
+            "language": "tel",
+            "liked": false,
+            "name": "Kaththi (2014).mkv",
+            "path": "D:\\MOVIES\\Tamil\\Kaththi (2014)\\Kaththi (2014).mkv",
+            "year": 2016
+        },
+        {
+            "_id": "0c65f140-1b4c-11eb-a8b6-f07959967e21",
+            "genre": "0c66b48e-1b4c-11eb-a3d1-f07959967e21",
+            "language": "jap",
+            "liked": false,
+            "name": "The.Challenger.Disaster.2019.1080p.WEBRip.x264-[YTS.AM].mp4",
+            "path": "D:\\MOVIES\\The Challenger Disaster (2019)\\The.Challenger.Disaster.2019.1080p.WEBRip.x264-[YTS.AM].mp4",
+            "year": 2008
+        },
+        {
+            "_id": "0c65f141-1b4c-11eb-ab29-f07959967e21",
+            "genre": "0c66b491-1b4c-11eb-8ab5-f07959967e21",
+            "language": "tam",
+            "liked": false,
+            "name": "The.Departed.2006.BluRay.1080p.x264.YIFY.mp4",
+            "path": "D:\\MOVIES\\The Departed (2006) \\The.Departed.2006.BluRay.1080p.x264.YIFY.mp4",
+            "year": 2014
+        },
+        {
+            "_id": "0c65f142-1b4c-11eb-9220-f07959967e21",
+            "genre": "0c66b48e-1b4c-11eb-a3d1-f07959967e21",
+            "language": "tel",
+            "liked": false,
+            "name": "The.Fifth.Estate.2013.720p.BluRay.x264.YIFY.mp4",
+            "path": "D:\\MOVIES\\The Fifth Estate (2013)\\The.Fifth.Estate.2013.720p.BluRay.x264.YIFY.mp4",
+            "year": 2001
+        },
+        {
+            "_id": "0c65f143-1b4c-11eb-9eb2-f07959967e21",
+            "genre": "0c66b48d-1b4c-11eb-828e-f07959967e21",
+            "language": "kan",
+            "liked": false,
+            "name": "The.Gentlemen.2019.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4",
+            "path": "D:\\MOVIES\\The Gentlemen (2019)\\The.Gentlemen.2019.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4",
+            "year": 2008
+        },
+        {
+            "_id": "0c65f144-1b4c-11eb-b897-f07959967e21",
+            "genre": "0c66b493-1b4c-11eb-810c-f07959967e21",
+            "language": "kan",
+            "liked": false,
+            "name": "The.Grinch.2018.1080p.BluRay.x264-[YTS.AM].mp4",
+            "path": "D:\\MOVIES\\The Grinch (2018)\\The.Grinch.2018.1080p.BluRay.x264-[YTS.AM].mp4",
+            "year": 2016
+        },
+        {
+            "_id": "0c65f145-1b4c-11eb-9923-f07959967e21",
+            "genre": "0c66b490-1b4c-11eb-9656-f07959967e21",
+            "language": "jap",
+            "liked": false,
+            "name": "The.Healer.2017.720p.BluRay.x264-[YTS.AG].mp4",
+            "path": "D:\\MOVIES\\The Healer (2017)\\The.Healer.2017.720p.BluRay.x264-[YTS.AG].mp4",
+            "year": 2010
+        },
+        {
+            "_id": "0c65f146-1b4c-11eb-88c2-f07959967e21",
+            "genre": "0c66b491-1b4c-11eb-8ab5-f07959967e21",
+            "language": "eng",
+            "liked": false,
+            "name": "The.Legend.Of.Secret.Pass.2019.1080p.WEBRip.x264-[YTS.AM].mp4",
+            "path": "D:\\MOVIES\\The Legend Of Secret Pass (2019)\\The.Legend.Of.Secret.Pass.2019.1080p.WEBRip.x264-[YTS.AM].mp4",
+            "year": 2004
+        },
+        {
+            "_id": "0c65f147-1b4c-11eb-923b-f07959967e21",
+            "genre": "0c66b48d-1b4c-11eb-828e-f07959967e21",
+            "language": "hin",
+            "liked": false,
+            "name": "The.Man.Called.Flintstone.1966.1080p.WEBRip.x264.AAC-[YTS.LT].mp4",
+            "path": "D:\\MOVIES\\The Man Called Flintstone (1966)\\The.Man.Called.Flintstone.1966.1080p.WEBRip.x264.AAC-[YTS.LT].mp4",
+            "year": 2008
+        },
+        {
+            "_id": "0c65f148-1b4c-11eb-87c3-f07959967e21",
+            "genre": "0c66b491-1b4c-11eb-8ab5-f07959967e21",
+            "language": "jap",
+            "liked": false,
+            "name": "The.Patriot.Extended.Cut.2000.1080p.BrRip.x264.YIFY.mp4",
+            "path": "D:\\MOVIES\\The Patriot Extended Cut\\The.Patriot.Extended.Cut.2000.1080p.BrRip.x264.YIFY.mp4",
+            "year": 2002
+        },
+        {
+            "_id": "0c65f149-1b4c-11eb-986a-f07959967e21",
+            "genre": "0c66b490-1b4c-11eb-9656-f07959967e21",
+            "language": "eng",
+            "liked": false,
+            "name": "The.Secret.Life.of.Walter.Mitty.2013.1080p.BluRay.x264.YIFY.mp4",
+            "path": "D:\\MOVIES\\The Secret Life of Walter Mitty (2013) \\The.Secret.Life.of.Walter.Mitty.2013.1080p.BluRay.x264.YIFY.mp4",
+            "year": 2009
+        },
+        {
+            "_id": "0c66b486-1b4c-11eb-acbf-f07959967e21",
+            "genre": "0c66b490-1b4c-11eb-9656-f07959967e21",
+            "language": "tel",
+            "liked": false,
+            "name": "The.Spectacular.Now.2013.1080p.BluRay.x264-[YTS.AG].mp4",
+            "path": "D:\\MOVIES\\The Spectacular Now (2013)\\The.Spectacular.Now.2013.1080p.BluRay.x264-[YTS.AG].mp4",
+            "year": 2011
+        },
+        {
+            "_id": "0c66b487-1b4c-11eb-b394-f07959967e21",
+            "genre": "0c66b48f-1b4c-11eb-a49d-f07959967e21",
+            "language": "jap",
+            "liked": false,
+            "name": "Hot.Fuzz.2007.720p.BRrip.x264.GAZ.YIFY.mp4",
+            "path": "D:\\MOVIES\\Three Flavours Cornetto Trilogy\\Hot.Fuzz.2007.720p.BRrip.x264.GAZ.YIFY.mp4",
             "year": 2020
         },
         {
-            "_id": "cbc7c382-1790-11eb-8a3a-e5f7bf0748df",
-            "genre": "",
-            "name": "Harry Potter All Movies Collection (2001-2011) 720p",
-            "stock": 7,
+            "_id": "0c66b488-1b4c-11eb-a34b-f07959967e21",
+            "genre": "0c66b493-1b4c-11eb-810c-f07959967e21",
+            "language": "kan",
+            "liked": false,
+            "name": "Shaun.of.the.Dead.2004.720p.BRRip.900MB.MkvCage.mkv",
+            "path": "D:\\MOVIES\\Three Flavours Cornetto Trilogy\\Shaun.of.the.Dead.2004.720p.BRRip.900MB.MkvCage.mkv",
+            "year": 2014
+        },
+        {
+            "_id": "0c66b489-1b4c-11eb-8d4c-f07959967e21",
+            "genre": "0c66b490-1b4c-11eb-9656-f07959967e21",
+            "language": "jap",
+            "liked": false,
+            "name": "The.Worlds.End.2013.720p.BRRip.950MB.MkvCage.mkv",
+            "path": "D:\\MOVIES\\Three Flavours Cornetto Trilogy\\The.Worlds.End.2013.720p.BRRip.950MB.MkvCage.mkv",
+            "year": 2011
+        },
+        {
+            "_id": "0c66b48a-1b4c-11eb-a259-f07959967e21",
+            "genre": "0c66b48e-1b4c-11eb-a3d1-f07959967e21",
+            "language": "tam",
+            "liked": false,
+            "name": "Touching.the.Void.2003.720p.BluRay.x264.YIFY.mp4",
+            "path": "D:\\MOVIES\\Touching the Void (2003)\\Touching.the.Void.2003.720p.BluRay.x264.YIFY.mp4",
+            "year": 2010
+        },
+        {
+            "_id": "0c66b48b-1b4c-11eb-a31c-f07959967e21",
+            "genre": "0c66b492-1b4c-11eb-8a35-f07959967e21",
+            "language": "tam",
+            "liked": false,
+            "name": "Uncut.Gems.2019.1080p.BluRay.x264-[YTS.LT].mp4",
+            "path": "D:\\MOVIES\\Uncut Gems (2019)\\Uncut.Gems.2019.1080p.BluRay.x264-[YTS.LT].mp4",
             "year": 2020
         },
         {
-            "_id": "cbc7c383-1790-11eb-a544-e5f7bf0748df",
-            "genre": "",
-            "name": "Hellboy (2019)",
-            "stock": 10,
-            "year": 2020
-        },
-        {
-            "_id": "cbc7c384-1790-11eb-8906-e5f7bf0748df",
-            "genre": "",
-            "name": "Hey Arnold - The Jungle Movie (2017) WEBDL LAT - ZeiZ",
-            "stock": 1,
-            "year": 2020
-        },
-        {
-            "_id": "cbc7c385-1790-11eb-8ee1-e5f7bf0748df",
-            "genre": "",
-            "name": "How To Train Your Dragon (2010)",
-            "stock": 3,
-            "year": 2020
-        },
-        {
-            "_id": "cbc7c386-1790-11eb-9732-e5f7bf0748df",
-            "genre": "",
-            "name": "How to Train Your Dragon 2 (2014)",
-            "stock": 10,
-            "year": 2020
-        },
-        {
-            "_id": "cbc7c387-1790-11eb-bf68-e5f7bf0748df",
-            "genre": "",
-            "name": "How.to.Train.Your.Dragon.The.Hidden.World.2019.1080p",
-            "stock": 1,
-            "year": 2020
-        },
-        {
-            "_id": "cbc7c388-1790-11eb-b619-e5f7bf0748df",
-            "genre": "",
-            "name": "Indiana Jones 1, 2, 3, 4 - Complete Collection 1981-2008 Eng Subs 1080p",
-            "stock": 5,
-            "year": 2020
-        },
-        {
-            "_id": "cbc7c389-1790-11eb-ac25-e5f7bf0748df",
-            "genre": "",
-            "name": "Interstellar (2014) (2014)",
-            "stock": 2,
-            "year": 2020
-        },
-        {
-            "_id": "cbc7c38a-1790-11eb-a861-e5f7bf0748df",
-            "genre": "",
-            "name": "Jobs",
-            "stock": 1,
-            "year": 2020
-        },
-        {
-            "_id": "cbc7c38b-1790-11eb-9974-e5f7bf0748df",
-            "genre": "",
-            "name": "John.Wick.3.2019.HDRip.XviD.AC3-EVO",
-            "stock": 9,
-            "year": 2020
-        },
-        {
-            "_id": "cbc7c38c-1790-11eb-bc02-e5f7bf0748df",
-            "genre": "",
-            "name": "Joker (2019)",
-            "stock": 4,
-            "year": 2020
-        },
-        {
-            "_id": "cbc7c38d-1790-11eb-bd5f-e5f7bf0748df",
-            "genre": "",
-            "name": "Klaus (2019)",
-            "stock": 9,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886ca-1790-11eb-a2c9-e5f7bf0748df",
-            "genre": "",
-            "name": "Knives Out (2019)",
-            "stock": 8,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886cb-1790-11eb-b562-e5f7bf0748df",
-            "genre": "",
-            "name": "Life of Pi 2012 x264 720p Esub BluRay Dual Audio English Hindi Telugu Tamil GOPISAHI.mkv",
-            "stock": 9,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886cc-1790-11eb-b2a1-e5f7bf0748df",
-            "genre": "",
-            "name": "Logan Lucky (2017)",
-            "stock": 9,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886cd-1790-11eb-961a-e5f7bf0748df",
-            "genre": "",
-            "name": "Love Aaj Kal (2020) Hindi Original 720p NF WEBRip \u2b50800 MB\u2b50 DD-5.1 ESub x264 - Shadow (Bonsai)",
-            "stock": 10,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886ce-1790-11eb-b5ab-e5f7bf0748df",
-            "genre": "",
-            "name": "MARVEL",
-            "stock": 3,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886cf-1790-11eb-8adb-e5f7bf0748df",
-            "genre": "",
-            "name": "Moneyball.2011.REMASTERED.1080p.BluRay.H264.AAC-RARBG",
-            "stock": 6,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886d0-1790-11eb-9cdd-e5f7bf0748df",
-            "genre": "",
-            "name": "Monty Python The Movies 1, 2, 3, 4 - Comedy 1971-1983 Eng Subs 1080p",
-            "stock": 8,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886d1-1790-11eb-93d0-e5f7bf0748df",
-            "genre": "",
-            "name": "Murder On The Orient Express (2017) [1080p] [YTS.AG]",
-            "stock": 10,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886d2-1790-11eb-b32b-e5f7bf0748df",
-            "genre": "",
-            "name": "My Hero Academia Island Movie.mp4",
-            "stock": 7,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886d3-1790-11eb-af4f-e5f7bf0748df",
-            "genre": "",
-            "name": "Onward (2020)",
-            "stock": 3,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886d4-1790-11eb-b0a1-e5f7bf0748df",
-            "genre": "",
-            "name": "Piper.2016.1080p.BluRay.H264.AAC-RARBG",
-            "stock": 8,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886d5-1790-11eb-a72e-e5f7bf0748df",
-            "genre": "",
-            "name": "Pirates Of the Caribbean",
-            "stock": 3,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886d6-1790-11eb-91d6-e5f7bf0748df",
-            "genre": "",
-            "name": "Playing.It.Cool.2014.1080p.BluRay.H264.AAC-RARBG",
-            "stock": 5,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886d7-1790-11eb-88a4-e5f7bf0748df",
-            "genre": "",
-            "name": "Ponyo.2008.DUBBED.1080p.BluRay.H264.AAC-RARBG",
-            "stock": 9,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886d8-1790-11eb-a68d-e5f7bf0748df",
-            "genre": "",
-            "name": "Premam.2015",
-            "stock": 7,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886d9-1790-11eb-850d-e5f7bf0748df",
-            "genre": "",
-            "name": "Princess Mononoke (1997)",
-            "stock": 8,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886da-1790-11eb-9b84-e5f7bf0748df",
-            "genre": "",
-            "name": "Ralph.Breaks.the.Internet.2018.2160p.UHD.HDR.BluRay.(x265 10bit DD5.1)..mkv",
-            "stock": 2,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886db-1790-11eb-8f63-e5f7bf0748df",
-            "genre": "",
-            "name": "Shazam! (2019)",
-            "stock": 4,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886dc-1790-11eb-a213-e5f7bf0748df",
-            "genre": "",
-            "name": "Smallfoot (2018)",
-            "stock": 7,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886dd-1790-11eb-a02a-e5f7bf0748df",
-            "genre": "",
-            "name": "Spirited Away (2001)",
-            "stock": 2,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886de-1790-11eb-a036-e5f7bf0748df",
-            "genre": "",
-            "name": "srtfiles",
-            "stock": 5,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886df-1790-11eb-aafb-e5f7bf0748df",
-            "genre": "",
-            "name": "Steve Jobs The Man In The Machine (2015)",
-            "stock": 1,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886e0-1790-11eb-8f64-e5f7bf0748df",
-            "genre": "",
-            "name": "Tamil",
-            "stock": 8,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886e1-1790-11eb-9499-e5f7bf0748df",
-            "genre": "",
-            "name": "The Challenger Disaster (2019)",
-            "stock": 6,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886e2-1790-11eb-87d1-e5f7bf0748df",
-            "genre": "",
-            "name": "The Departed (2006)",
-            "stock": 2,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886e3-1790-11eb-9cb6-e5f7bf0748df",
-            "genre": "",
-            "name": "The Fifth Estate (2013)",
-            "stock": 2,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886e4-1790-11eb-a74d-e5f7bf0748df",
-            "genre": "",
-            "name": "The Gentlemen (2019)",
-            "stock": 6,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886e5-1790-11eb-a45e-e5f7bf0748df",
-            "genre": "",
-            "name": "The Grinch (2018)",
-            "stock": 3,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886e6-1790-11eb-9920-e5f7bf0748df",
-            "genre": "",
-            "name": "The Healer (2017)",
-            "stock": 3,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886e7-1790-11eb-bfed-e5f7bf0748df",
-            "genre": "",
-            "name": "The Irishman.2019.HDRip.XviD.AC3-EVO",
-            "stock": 3,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886e8-1790-11eb-a00f-e5f7bf0748df",
-            "genre": "",
-            "name": "The Judge (2014) 1080p BrRip x264",
-            "stock": 7,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886e9-1790-11eb-8378-e5f7bf0748df",
-            "genre": "",
-            "name": "The Legend Of Secret Pass (2019)",
-            "stock": 10,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886ea-1790-11eb-bc02-e5f7bf0748df",
-            "genre": "",
-            "name": "The Man Called Flintstone (1966)",
-            "stock": 1,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886eb-1790-11eb-816d-e5f7bf0748df",
-            "genre": "",
-            "name": "The Patriot Extended Cut",
-            "stock": 5,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886ec-1790-11eb-ab9c-e5f7bf0748df",
-            "genre": "",
-            "name": "The Pursuit of Happyness",
-            "stock": 7,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886ed-1790-11eb-ae63-e5f7bf0748df",
-            "genre": "",
-            "name": "The Secret Life of Walter Mitty (2013)",
-            "stock": 8,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886ee-1790-11eb-b24f-e5f7bf0748df",
-            "genre": "",
-            "name": "The Spectacular Now (2013)",
-            "stock": 2,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886ef-1790-11eb-9ff8-e5f7bf0748df",
-            "genre": "",
-            "name": "The.Man.from.U.N.C.L.E.2015.HDRip.XViD-ETRG",
-            "stock": 6,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886f0-1790-11eb-9232-e5f7bf0748df",
-            "genre": "",
-            "name": "The.Post.2017.1080p.BluRay.x265-RARBG",
-            "stock": 8,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886f1-1790-11eb-90b9-e5f7bf0748df",
-            "genre": "",
-            "name": "Three Flavours Cornetto Trilogy",
-            "stock": 8,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886f2-1790-11eb-a509-e5f7bf0748df",
-            "genre": "",
-            "name": "Tomorrowland (2015)",
-            "stock": 10,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886f3-1790-11eb-a7b9-e5f7bf0748df",
-            "genre": "",
-            "name": "Touching the Void (2003)",
-            "stock": 9,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886f4-1790-11eb-b7a0-e5f7bf0748df",
-            "genre": "",
-            "name": "Uncut Gems (2019)",
-            "stock": 1,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886f5-1790-11eb-8807-e5f7bf0748df",
-            "genre": "",
-            "name": "WALL E",
-            "stock": 4,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886f6-1790-11eb-97eb-e5f7bf0748df",
-            "genre": "",
-            "name": "We.Bought.a.Zoo.2011.1080p.BluRay.x265-RARBG",
-            "stock": 5,
-            "year": 2020
-        },
-        {
-            "_id": "cbc886f7-1790-11eb-9c57-e5f7bf0748df",
-            "genre": "",
-            "name": "Zootopia.2016.1080p.BluRay.H264.AAC-RARBG",
-            "stock": 1,
-            "year": 2020
+            "_id": "0c66b48c-1b4c-11eb-ae9f-f07959967e21",
+            "genre": "0c66b493-1b4c-11eb-810c-f07959967e21",
+            "language": "jap",
+            "liked": false,
+            "name": "We.Bought.a.Zoo.2011.1080p.BluRay.x265-RARBG.mp4",
+            "path": "D:\\MOVIES\\We.Bought.a.Zoo.2011.1080p.BluRay.x265-RARBG\\We.Bought.a.Zoo.2011.1080p.BluRay.x265-RARBG.mp4",
+            "year": 2015
         }
     ]
 }
