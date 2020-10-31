@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import MovieTable from "./movie/movieTable";
+import MovieListing from "./movie/movieListing";
 import ListGroup from "./common/listGroup";
 import SearchBar from "./searchBar";
 import getMovies from "../services/movieService";
@@ -15,7 +15,7 @@ class LandingPage extends Component {
   };
 
   componentDidMount() {
-    const genres = getGenres();
+    const genres = [{ _id: "", genre: "All Movies" }, ...getGenres()];
     const movies = getMovies();
     this.setState({ genres, movies });
   }
@@ -48,7 +48,10 @@ class LandingPage extends Component {
             />
           </Col>
           <Col className="col-8">
-            <MovieTable movies={filteredMovies} />
+            <MovieListing
+              movies={filteredMovies}
+              genreSelected={this.state.genreSelected}
+            />
           </Col>
         </Row>
       </Container>
