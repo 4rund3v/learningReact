@@ -12,20 +12,20 @@ const styles = {
 };
 
 const Counter = (props) => {
-  console.log("Counter ", props);
-  const id = props.prod.id;
-  const value = props.prod.value;
-  const name = props.prod.name;
+  console.log("[Counter] ", props.prod);
+  const { id, name, value, prodImage } = props.prod;
+  const { onIncrement, onDelete } = props;
   return (
     <React.Fragment>
       {name}
       <span style={styles} className={getBadgeClasses(value)}>
         {value}
       </span>
-      <Button variant="primary" onClick={() => props.onIncrement(id)}>
+      <img src={prodImage} alt="ProductImage" />
+      <Button variant="primary" onClick={() => onIncrement(id)}>
         Increment
       </Button>{" "}
-      <Button variant="danger" onClick={() => props.onDelete(id)}>
+      <Button variant="danger" onClick={() => onDelete(id)}>
         Delete
       </Button>{" "}
     </React.Fragment>
