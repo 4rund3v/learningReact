@@ -60,7 +60,19 @@ class App extends Component {
     });
     this.setState({ products });
   };
-
+  handleDecrement = (prodId) => {
+    console.log("[App] handleDecrement :: ", prodId);
+    const products = [...this.state.products];
+    products.map((prod) => {
+      if (prod.id === prodId) {
+        if (prod.value > 0) {
+          prod.value = prod.value - 1;
+        }
+      }
+      return prod;
+    });
+    this.setState({ products });
+  };
   handleDelete = (prodId) => {
     console.log("Delete Event Handler called.", prodId);
     const newProducts = this.state.products.filter(
@@ -88,6 +100,7 @@ class App extends Component {
           onReset={this.handleReset}
           onDelete={this.handleDelete}
           onIncrement={this.handleIncrement}
+          onDecrement={this.handleDecrement}
         />
       </React.Fragment>
     );

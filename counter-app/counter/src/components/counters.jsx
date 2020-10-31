@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { Button } from "react-bootstrap";
+import { Button, Row, Container } from "react-bootstrap";
 import Counter from "./counter";
 
 const Counters = (props) => {
   console.log("Rendering Products Data");
-  const { onIncrement, onDelete, onReset, products } = props;
+  const { onIncrement, onDecrement, onDelete, onReset, products } = props;
   return (
     <div>
       <Button variant="primary" onClick={() => onReset()}>
@@ -13,13 +13,16 @@ const Counters = (props) => {
       <ul>
         {products.map((prod) => (
           <li key={prod.id}>
-            {" "}
-            <Counter
-              key={prod.id}
-              prod={prod}
-              onIncrement={onIncrement}
-              onDelete={onDelete}
-            />{" "}
+            <div className="row no-gutters">
+              {" "}
+              <Counter
+                key={prod.id}
+                prod={prod}
+                onIncrement={onIncrement}
+                onDecrement={onDecrement}
+                onDelete={onDelete}
+              />{" "}
+            </div>
           </li>
         ))}
       </ul>
