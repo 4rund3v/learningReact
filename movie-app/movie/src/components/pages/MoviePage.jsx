@@ -134,6 +134,28 @@ class MoviePage extends Component {
     } = this.getFilteredMovies();
 
     return (
+      // <div>
+      //   <SearchBar searchKeyword={searchKeyword} />
+      //   <SidePanel
+      //     items={genres}
+      //     textProperty={"genre"}
+      //     valueProperty={"_id"}
+      //     onItemSelect={this.handleGenreSelect}
+      //     selectedItem={selectedGenre}
+      //   />
+      //   <CustomTable
+      //     movies={filteredMovies}
+      //     onLike={this.handleMovieLiked}
+      //     onDelete={this.handleMovieDelete}
+      //     onSort={this.handleSort}
+      //   />
+      //   <Pagination
+      //     currentPage={currentPage}
+      //     itemsCount={movieCount}
+      //     pageSize={pageSize}
+      //     onPageChange={this.handlePageChange}
+      //   />
+      // </div>
       <Container>
         <Row>
           <SearchBar searchKeyword={searchKeyword} />
@@ -150,6 +172,7 @@ class MoviePage extends Component {
           </Col>
           <Col className="col-8">
             <CustomTable
+              className="Movietable"
               movies={filteredMovies}
               onLike={this.handleMovieLiked}
               onDelete={this.handleMovieDelete}

@@ -12,6 +12,7 @@ const SidePanel = (props) => {
   if (!items) return null;
   console.log(" value is :: ", valueProperty);
   console.log(" text is :: ", textProperty);
+
   return (
     <ul className="list-group">
       {items.map((item) => (
