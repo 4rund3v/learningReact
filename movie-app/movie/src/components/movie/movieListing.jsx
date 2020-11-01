@@ -76,7 +76,7 @@ class MovieListing extends Component {
       <MovieTable
         movies={movies}
         onLike={this.handleMovieLiked}
-        onDelete={this.handleMovieLiked}
+        onDelete={this.handleMovieDelete}
         onSort={this.handleSort}
       />
     );

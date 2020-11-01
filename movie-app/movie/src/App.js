@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-import LandingPage from "./components/landingPage";
+import MoviePage from "./components/movie/MoviePage";
+import NavBar from "./components/navBar";
 
 class App extends Component {
   state = {};
   render() {
     return (
       <div>
-        <LandingPage />
+        <NavBar />
+        <MoviePage />
       </div>
     );
   }

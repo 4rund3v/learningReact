@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 
-const ListGroup = (props) => {
+const SidePanel = (props) => {
   const {
     items,
     textProperty,
@@ -8,6 +8,10 @@ const ListGroup = (props) => {
     onItemSelect,
     selectedItem,
   } = props;
+
+  if (!items) return null;
+  console.log(" value is :: ", valueProperty);
+  console.log(" text is :: ", textProperty);
   return (
     <ul className="list-group">
       {items.map((item) => (
@@ -27,9 +31,9 @@ const ListGroup = (props) => {
   );
 };
 
-ListGroup.defaultProps = {
+SidePanel.defaultProps = {
   textProperty: "genre",
   valueProperty: "_id",
 };
 
-export default ListGroup;
+export default SidePanel;

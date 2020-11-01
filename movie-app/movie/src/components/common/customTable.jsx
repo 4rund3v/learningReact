@@ -1,10 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import { Row, Table } from "react-bootstrap";
-
 import { getGenreNameById } from "../../services/genreService";
-import Like from "../common/like";
+import Like from "./like";
 
-const MovieTable = (props) => {
+const CustomTable = (props) => {
   const { movies, onLike, onDelete, onSort } = props;
   const tableHeader = (
     <thead>
@@ -24,7 +23,7 @@ const MovieTable = (props) => {
     <tbody>
       {movies.map((movie, index) => {
         const elem = (
-          <tr key={movie._id}>
+          <tr key={movie._id} className="flex">
             <td>{index + 1}</td>
             <td>{movie.name}</td>
             <td>{movie.language}</td>
@@ -56,4 +55,5 @@ const MovieTable = (props) => {
   );
   return movieTable;
 };
-export default MovieTable;
+
+export default CustomTable;
