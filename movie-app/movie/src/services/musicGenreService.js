@@ -1,5 +1,3 @@
-import { getMusicGenres } from "./musicGenreService";
-
 const genres = [
   {
     _id: "f65efc30-1b4c-11eb-b2b1-f07959967e21",
@@ -31,16 +29,14 @@ const genres = [
   },
 ];
 
-const allGenres = [...genres, ...getMusicGenres()];
-
 export function getGenreNameById(genreId) {
-  for (let i = 0; i < allGenres.length; i++) {
-    if (allGenres[i]._id === genreId) {
-      return allGenres[i].genre;
+  for (let i = 0; i < genres.length; i++) {
+    if (genres[i]._id === genreId) {
+      return genres[i].genre;
     }
   }
 }
 
-export function getGenres() {
+export function getMusicGenres() {
   return genres.filter((g) => g);
 }

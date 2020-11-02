@@ -7,6 +7,8 @@ import PropTypes from "prop-types";
  Ouput: onPageChange
 */
 
+// Stateless functional components
+
 const Pagination = (props) => {
   const { currentPage, itemsCount, pageSize, onPageChange } = props;
   // console.log(currentPage, itemsCount, pageSize, onPageChange);

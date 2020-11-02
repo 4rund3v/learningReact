@@ -4,7 +4,7 @@ import { getGenreNameById } from "../../services/genreService";
 import Like from "./like";
 
 const CustomTable = (props) => {
-  const { movies, onLike, onDelete, onSort } = props;
+  const { items, onLike, onDelete, onSort } = props;
   const tableHeader = (
     <thead>
       <tr>
@@ -21,7 +21,7 @@ const CustomTable = (props) => {
 
   const tableBody = (
     <tbody>
-      {movies.map((movie, index) => {
+      {items.map((movie, index) => {
         const elem = (
           <tr key={movie._id} className="flex">
             <td>{index + 1}</td>

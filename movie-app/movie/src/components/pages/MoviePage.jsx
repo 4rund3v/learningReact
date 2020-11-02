@@ -28,7 +28,7 @@ class MoviePage extends Component {
     selectedGenre: "",
     currentPage: 1,
     searchKeyword: "",
-    pageSize: 10,
+    pageSize: 15,
     sortColumn: { path: "name", order: "asc" },
   };
 
@@ -128,34 +128,13 @@ class MoviePage extends Component {
       pageSize,
       currentPage,
     } = this.state;
+
     const {
       data: filteredMovies,
       count: movieCount,
     } = this.getFilteredMovies();
 
     return (
-      // <div>
-      //   <SearchBar searchKeyword={searchKeyword} />
-      //   <SidePanel
-      //     items={genres}
-      //     textProperty={"genre"}
-      //     valueProperty={"_id"}
-      //     onItemSelect={this.handleGenreSelect}
-      //     selectedItem={selectedGenre}
-      //   />
-      //   <CustomTable
-      //     movies={filteredMovies}
-      //     onLike={this.handleMovieLiked}
-      //     onDelete={this.handleMovieDelete}
-      //     onSort={this.handleSort}
-      //   />
-      //   <Pagination
-      //     currentPage={currentPage}
-      //     itemsCount={movieCount}
-      //     pageSize={pageSize}
-      //     onPageChange={this.handlePageChange}
-      //   />
-      // </div>
       <Container>
         <Row>
           <SearchBar searchKeyword={searchKeyword} />
@@ -164,7 +143,7 @@ class MoviePage extends Component {
           <Col className="col-2">
             <SidePanel
               items={genres}
-              textProperty={"genre"}
+              textProperty={"genre"} // genre selected
               valueProperty={"_id"}
               onItemSelect={this.handleGenreSelect}
               selectedItem={selectedGenre}
@@ -173,13 +152,13 @@ class MoviePage extends Component {
           <Col className="col-8">
             <CustomTable
               className="Movietable"
-              movies={filteredMovies}
+              items={filteredMovies} // filtereds => genre  + pagin
               onLike={this.handleMovieLiked}
               onDelete={this.handleMovieDelete}
               onSort={this.handleSort}
             />
             <Pagination
-              currentPage={currentPage}
+              currentPage={currentPage} // pagenum
               itemsCount={movieCount}
               pageSize={pageSize}
               onPageChange={this.handlePageChange}
