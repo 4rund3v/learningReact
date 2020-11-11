@@ -31,5 +31,5 @@
 - [x] Dashboard App
 - [ ] Music App
 - [ ] ToDo App
-- [ ] material app
+- [x] material app
 
