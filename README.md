@@ -28,7 +28,7 @@
 
 - [x] Shopping Cart total calculator
 - [x] Local Movie App
-- [ ] Dashboard App
+- [x] Dashboard App
 - [ ] Music App
 - [ ] ToDo App
 - [ ] material app
