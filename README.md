@@ -3,9 +3,9 @@
 - [x] Finish JS fundamentals
 - [x] Get started with react
 - [x] React Antd for UI framework
-- [ ] React Dashboard
+- [x] React Dashboard
 - [x] Build basic apps
-- [ ] SPA
+- [x] SPA
 - [x] SFA & Class components
 
 ## Fundamentals of Javascript
