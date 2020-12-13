@@ -5,7 +5,7 @@
 - [x] React Antd for UI framework
 - [x] React Dashboard
 - [x] Build basic apps
-- [x] SPA
+- [ ] SPA
 - [x] SFA & Class components
 
 ## Fundamentals of Javascript
